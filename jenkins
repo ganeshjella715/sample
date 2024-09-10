@@ -1,0 +1,14 @@
+pipeline{
+    agent any
+    stages('welcome to pipeline'){
+        stage('stage one'){
+            steps{
+                echo "welcome"
+                script{
+                date= new Date();
+                print date
+                }
+            }
+        }
+    }
+}
